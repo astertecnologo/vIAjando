@@ -1,0 +1,302 @@
+.header {
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.header-nav a:hover {
+  color: #007bff;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.header-actions .btn {
+  border: 1px solid #007bff;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-actions .btn.signup-btn {
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+}
+.header-actions .btn.login-btn {
+  background-color: #ffffff;
+  color: rgb(68, 133, 255);
+}
+.header-actions .btn:hover {
+  opacity: 0.8;
+}
+
+.header-search {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.header-search h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  opacity: 0.9;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+#button {
+  color: blue;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+h3 {
+  font-size: small;
+  text-align: left;
+  }
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Estilos para a tela de pacotes */
+.packages-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.packages-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.packages-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.packages-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.package-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+}
+
+.package-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.package-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.package-destination {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.package-description {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.package-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Login Form */
+.login-container {
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-submit,
+.btn-cancel {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-cancel {
+  background-color: #ccc;
+  margin-left: 10px;
+}
+/* Botão de Fechar */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-button:hover {
+  color: #007bff;
+}
+/* Estilo do Modal */
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
